@@ -17,7 +17,7 @@ class BPlusTree:
         self.order = order
         self.min_keys = math.ceil(order / 2) - 1
 
-    # ── SEARCH ──────────────────────────────────────────────────
+    # SEARCH 
     def search(self, key):
         node = self.root
         while not node.leaf:
@@ -30,7 +30,7 @@ class BPlusTree:
                 return node.values[i]
         return None
 
-    # ── RANGE QUERY ─────────────────────────────────────────────
+    # RANGE QUERY
     def range_query(self, start_key, end_key):
         results = []
         node = self.root
@@ -48,7 +48,7 @@ class BPlusTree:
             node = node.next
         return results
 
-    # ── GET ALL ─────────────────────────────────────────────────
+    # GET ALL
     def get_all(self):
         results = []
         node = self.root
@@ -60,7 +60,7 @@ class BPlusTree:
             node = node.next
         return results
 
-    # ── INSERT ──────────────────────────────────────────────────
+    # INSERT 
     def insert(self, key, value):
         root = self.root
         if len(root.keys) == self.order - 1:
@@ -114,7 +114,7 @@ class BPlusTree:
             parent.keys.insert(index, promoted_key)
             parent.children.insert(index + 1, new_node)
 
-    # ── DELETE ──────────────────────────────────────────────────
+    # DELETE
     def delete(self, key):
         if not self.root:
             return False
@@ -193,7 +193,7 @@ class BPlusTree:
         node.keys.pop(index)
         node.children.pop(index + 1)
 
-    # ── UPDATE ──────────────────────────────────────────────────
+    # UPDATE 
     def update(self, key, new_value):
         node = self.root
         while not node.leaf:
@@ -207,7 +207,7 @@ class BPlusTree:
                 return True
         return False
 
-    # ── VISUALIZE ───────────────────────────────────────────────
+    # VISUALIZE 
     @staticmethod
     def _label(node):
         """Build a Graphviz HTML-like label for a node."""
