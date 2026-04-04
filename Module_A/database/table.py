@@ -14,13 +14,10 @@ class Table:
         self.tree.insert(key, record)
         if existing is None:
             self.record_count += 1
-        print(f"[{self.name}] Inserted key={key} -> {record}")
 
     def select(self, key):
-        result = self.tree.search(key)
-        if result is None:
-            print(f"[{self.name}] Key {key} not found.")
-        return result
+        return self.tree.search(key)
+
 
     def update(self, key, new_record: dict):
         success = self.tree.update(key, new_record)
