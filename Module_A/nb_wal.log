@@ -1,0 +1,6 @@
+{"txn_id": 1, "op_type": "BEGIN", "table": null, "key": null, "before": null, "after": null, "timestamp": 1775337271.7642565}
+{"txn_id": 1, "op_type": "INSERT", "table": "accounts", "key": 1, "before": null, "after": {"holder": "Alice", "balance": 1000}, "timestamp": 1775337271.7676723}
+{"txn_id": 2, "op_type": "BEGIN", "table": null, "key": null, "before": null, "after": null, "timestamp": 1775337271.7689795}
+{"txn_id": 2, "op_type": "INSERT", "table": "accounts", "key": 2, "before": null, "after": {"holder": "Bob", "balance": 2000}, "timestamp": 1775337271.7703035}
+{"txn_id": 2, "op_type": "ROLLBACK", "table": null, "key": null, "before": null, "after": null, "timestamp": 1775337271.7714067}
+{"txn_id": 1, "op_type": "COMMIT", "table": null, "key": null, "before": null, "after": null, "timestamp": 1775337271.7726984}

@@ -1,0 +1,39 @@
+{
+  "base_url": "http://localhost:5000",
+  "admin": {
+    "user": "admin",
+    "password": "password123"
+  },
+  "patients": {
+    "patient1": {
+      "username": "patient1",
+      "password": "Patient1pass",
+      "member_id": 28,
+      "patient_id": 17
+    },
+    "patient2": {
+      "username": "patient2",
+      "password": "Patient2pass",
+      "member_id": 29,
+      "patient_id": 18
+    }
+  },
+  "doctors": {
+    "doctor1": {
+      "username": "doctor1",
+      "password": "Doctor1pass",
+      "member_id": 30,
+      "doctor_id": 6,
+      "slot_ids": [
+        11,
+        12,
+        13
+      ]
+    }
+  },
+  "race_test": {
+    "doctor_id": 6,
+    "slot_id": 11,
+    "date": "2026-04-05"
+  }
+}

@@ -1,0 +1,29 @@
+[2026-03-22 16:32:44.308425] USER: admin ACTION: CREATED MEMBER 18 (username: umang, type: Doctor)
+[2026-03-22 17:33:35.533601] USER: admin ACTION: DELETED APPOINTMENT 16
+[2026-03-22 17:34:35.165640] USER: admin ACTION: CREATED MEMBER 19 (username: sai, type: Doctor)
+[2026-03-22 17:45:27.900458] USER: admin ACTION: CREATED MEMBER 22 (username: tanuj, type: Doctor)
+[2026-03-22 17:45:51.071819] USER: admin ACTION: DELETED MEMBER 22 (name: tanuj)
+[2026-03-22 17:46:28.109335] USER: admin ACTION: UPDATED APPOINTMENT 11
+[2026-03-22 17:47:27.187412] USER: admin ACTION: CREATED MEDICINE 11 (name: abc, qty: 1000)
+[2026-03-22 17:49:02.971231] USER: amit ACTION: CREATED APPOINTMENT 17
+[2026-04-03 23:48:14.428647] USER: admin ACTION: CREATED MEMBER 23 (username: tanuj, type: Doctor)
+[2026-04-04 00:37:51] USER: admin ACTION: CREATED MEMBER 24 (username: mangal, type: Doctor, role: user)
+[2026-04-04 00:39:46] USER: admin ACTION: CREATED MEMBER 25 (username: deva, type: Patient, role: user)
+[2026-04-04 00:57:56] USER: admin ACTION: DELETED MEMBER 1 (name: Amit Sharma)
+[2026-04-04 01:15:28] USER: admin ACTION: DELETED MEDICINE 11 (name: abc)
+[2026-04-04 02:49:26] USER: admin ACTION: CREATED APPOINTMENT 16
+[2026-04-04 02:49:29] USER: admin ACTION: CREATED MEMBER 16 (username: concuser_1775251166, type: Patient, role: user)
+[2026-04-04 02:49:40] USER: admin ACTION: CREATED MEMBER 26 (username: rbtest_1775251177, type: Patient, role: user)
+[2026-04-04 02:50:31] USER: admin ACTION: CREATED MEMBER 27 (username: duptest_1775251229, type: Staff, role: user)
+[2026-04-04 03:06:43] USER: admin ACTION: CREATED MEMBER 28 (username: patient1, type: Patient, role: user)
+[2026-04-04 03:06:46] USER: admin ACTION: CREATED MEMBER 29 (username: patient2, type: Patient, role: user)
+[2026-04-04 03:06:48] USER: admin ACTION: CREATED MEMBER 30 (username: doctor1, type: Doctor, role: user)
+[2026-04-04 03:08:03] USER: admin ACTION: CREATED APPOINTMENT 17
+[2026-04-04 03:08:06] USER: admin ACTION: CREATED MEMBER 31 (username: concuser_1775252283, type: Patient, role: user)
+[2026-04-04 03:08:08] USER: patient1 ACTION: UNAUTHORIZED ACCESS ATTEMPT: Portfolio 29
+[2026-04-04 03:08:19] USER: admin ACTION: CREATED MEMBER 41 (username: rbtest_1775252297, type: Patient, role: user)
+[2026-04-04 03:10:08] USER: admin ACTION: CREATED MEMBER 42 (username: duptest_1775252406, type: Staff, role: user)
+[2026-04-04 03:16:14] USER: admin ACTION: CREATED MEMBER 46 (username: concuser_1775252771, type: Patient, role: user)
+[2026-04-04 03:16:16] USER: patient1 ACTION: UNAUTHORIZED ACCESS ATTEMPT: Portfolio 29
+[2026-04-04 03:16:27] USER: admin ACTION: CREATED MEMBER 53 (username: rbtest_1775252785, type: Patient, role: user)
+[2026-04-04 03:22:19] USER: admin ACTION: CREATED MEMBER 54 (username: duptest_1775253137, type: Staff, role: user)

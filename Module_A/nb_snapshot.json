@@ -1,0 +1,14 @@
+{
+  "accounts": {
+    "order": 4,
+    "records": [
+      [
+        1,
+        {
+          "holder": "Alice",
+          "balance": 1000
+        }
+      ]
+    ]
+  }
+}
