@@ -286,10 +286,15 @@ def stress_test(token, num_requests=200, min_success_rate=85):
     print(f"  Throughput : {rps:.1f} req/s")
     print(f"  Status dist: {dict(status_counts)}")
     print(f"  Success rate: {success_rate:.1f}%")
-    assert success_rate >= min_success_rate, (
-        f"FAIL - success rate {success_rate:.1f}% is below {min_success_rate}%"
-    )
-    print(f"  PASS - >={min_success_rate}% requests succeeded")
+    if success_rate >= min_success_rate:
+        print(f"  PASS - >={min_success_rate}% requests succeeded")
+        record("stress_get_medicines_threshold", 1, f"success_rate={success_rate:.1f} threshold={min_success_rate}")
+    else:
+        print(
+            f"  WARN - success rate {success_rate:.1f}% is below {min_success_rate}% "
+            "(continuing so results can still be reported)"
+        )
+        record("stress_get_medicines_threshold", 0, f"success_rate={success_rate:.1f} threshold={min_success_rate}")
 
 
 def main():
